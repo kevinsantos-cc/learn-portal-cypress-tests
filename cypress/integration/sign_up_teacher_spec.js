@@ -1,8 +1,8 @@
 context('Teacher-Sign-Up', function() {
   it.only('Signs up as a teacher',() => {
     cy.contains('Register').click()
-      .get('div [class = "text-input first_name"]').find('input').type('stu-first1')
-      .get('div [class = "text-input last_name"]').find('input').type('stu-last1')
+      .get('div [class = "text-input first_name"]').find('input').type('t-first1')
+      .get('div [class = "text-input last_name"]').find('input').type('t-last1')
       .get('div [class = "text-input password"]').find('input').type('password')
       .get('div [class = "text-input password_confirmation"]').find('input').type('password')
 
